@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        function myFunc(){
+           //$("#menu").children().css("backgroundColor","red");
+           //document.getElementById('menu').children.style.backgroundColor='red';
+           //document.getElementById('menu').children[0].style.backgroundColor='red';
+            var menu=document.getElementById('menu');
+            var myChildren=menu.children;
+            for(var i=0; i<myChildren.length; i++){//0~6
+                myChildren[i].style.backgroundColor='red';
+            }
+        }
+    </script>
+</head>
+<body>
+    <ul id="menu"><!--부모-->
+        <li>리스트1</li><!--자식-->
+        <li>리스트2</li>
+        <li>리스트3</li>
+        <li>리스트4</li>
+        <li>리스트5</li>
+        <li>리스트6</li>
+        <li>리스트7</li>
+    </ul>
+    <button onclick="myFunc()">클릭</button>
+</body>
+</html>

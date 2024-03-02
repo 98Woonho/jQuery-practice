@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(document).on('mousemove',function(e){//이벤트 객체->e.keyCode, e.pageX...
+                                    //콜백함수 매개변수 e,event만 설정하면 그냥 이벤트 객체가 넘어온다
+                                    //입만 벌리면 그냥 밥이 들어온다.
+                    console.log('x:'+e.pageX)
+                    console.log('y:'+e.pageY)
+            })
+        })
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+

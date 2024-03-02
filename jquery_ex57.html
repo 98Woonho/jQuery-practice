@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #my-img{
+            width:100px;
+            height:100px;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        function myFunc(){
+            $("#pw").attr('type','text');
+            //pw요소 접근해서 type속성을 text로 변경 (암호화 해제)
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="id"> <br>
+    <input type="password" id="pw"> <br>
+    <button onclick="myFunc()">클릭</button>
+</body>
+</html>

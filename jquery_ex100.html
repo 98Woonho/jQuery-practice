@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #my-div{
+            width:100px;
+            height:100px;
+            background-color: aqua;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        //slideUp, slideDown, slideToggle
+        //slideUp()
+        //slideUp(2000)
+        //slideUp(2000,완료시 실행할 콜백)
+        //slideUp(2000,이징,완료시 실행할 콜백)
+        //easing 모양 확인-easing의 default값은 swing
+        $(document).ready(function(){
+           $("#slide-up-btn").on('click',function(){
+                $("#my-div").slideUp(400,'linear',function(){
+                    alert('슬라이드업 완료!');
+                });
+           })
+           $("#slide-down-btn").on('click',function(){
+                $("#my-div").slideDown(400,'linear',function(){
+                    alert('슬라이드다운 완료!');
+                });
+           })
+        })
+    </script>
+</head>
+<body>
+    <button id="slide-up-btn">slideUp</button>
+    <button id="slide-down-btn">slideDown</button>
+    <div id="my-div">
+        박스
+    </div>
+</body>
+</html>
+

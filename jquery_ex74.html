@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#my-btn").on({
+                'mouseenter':function(){
+                    $("#my-btn").parent().next()
+                    .css("backgroundColor","red").text('올라감!');
+                },
+                'mouseleave':function(){
+                    $("#my-btn").parent().next()
+                    .css("backgroundColor","green").text('나감!');
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <p>
+        <button id="my-btn">버튼</button>
+    </p>
+    <p id="para">
+        내용
+    </p>
+</body>
+</html>
+

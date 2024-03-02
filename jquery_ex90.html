@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var myAudio = new Audio();
+            $(document).on('keydown',function(e){//이벤트객체
+                //console.log(e.keyCode);
+                switch(e.keyCode){
+                    case 65://A
+                        $("#my-input").val('A');
+                        myAudio.src='./audio/1_do.wav';
+                        break;
+                    case 83://S
+                        $("#my-input").val('S');
+                        break;
+                }
+                myAudio.play();
+            })
+        })
+    </script>
+</head>
+<body>
+    <input type="text" id="my-input"/>
+</body>
+</html>
+

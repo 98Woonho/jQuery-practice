@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .my-red{
+            color:red;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        function myFunc(){
+           //addClass, removeClass, hasClass, toggleClass
+           $("#my-span").addClass("my-red");
+           //my-span요소에 class my-red추가
+        }
+    </script>
+</head>
+<body>
+    <span id="my-span">스팬</span>
+    <button onclick="myFunc()">클릭</button>
+</body>
+</html>

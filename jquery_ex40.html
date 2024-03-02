@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        function myFunc(){
+          //var myVal=document.getElementById('my-input').value;
+          var myVal=$("#my-input").val();
+          //val메서드가 접근한 요소의 value값을 반환해준다.
+          //val메서드란것도 원래 없는거고, css메서드란것도 원래 없는것
+          alert(myVal);//김대리
+        }
+    </script>
+</head>
+<body>
+    <input type="text" value="김대리" id="my-input"/>
+    <button onclick="myFunc()">클릭</button>
+</body>
+</html>

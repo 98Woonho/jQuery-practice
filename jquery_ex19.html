@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap{
+            width:200px;
+            height:400px;
+            background-color: aqua;
+        }
+        .box{
+            width:100px;
+            height:100px;
+            background-color: aquamarine;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        function myFunc(){
+            var box=$("#wrap>.box");
+            // box에서 첫 번째 요소를 선택 후, 배경 색을 빨간색으로 변경
+            box.eq(0).css("backgroundColor","red");
+            // box에서 두 번째 요소를 선택 후, 배경 색을 초록색으로 변경
+            box.eq(1).css("backgroundColor","green");
+            // box에서 세 번째 요소를 선택 후, 배경 색을 파란색으로 변경
+            box.eq(2).css("backgroundColor","blue");
+            //equal
+        }
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <div class="box">
+            박스1
+        </div>
+        <div class="box">
+            박스2
+        </div>
+        <div class="box">
+            박스3
+        </div>
+    </div>
+    <button onclick="myFunc()">클릭</button>
+</body>
+</html>

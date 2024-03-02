@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #my-div{
+            width:100px;
+            height:100px;
+            background-color: aqua;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        //jquery는 DOM제어를 위한 자바스크립트 라이브러리
+        //JavaScript library for DOM operations
+        //$메서드, css메서드
+        //$로 아이디,클래스,하위선택,여러개접근,태그이름...
+        //$는 만능 접근 메서드~
+        function myFunc(){
+            //$("#my-div").css('backgroundColor','red');
+            //$는 jQuery메서드의 별칭,별명(alias);
+            //jquery써서 순수js로 100줄쓸걸 이걸로 하면 10줄나온다.
+            //The Write Less, Do More-덜쓰고,더하자
+            jQuery("#my-div").css('backgroundColor','red');
+        //document.getElementById('my-div').style.backgroundColor='red';
+        //순수 자바스크립트(바닐라 자바스크립트)
+        }
+    </script>
+</head>
+<body>
+    <div id="my-div">
+        박스
+    </div>
+    <button onclick="myFunc()">클릭</button>
+</body>
+</html>

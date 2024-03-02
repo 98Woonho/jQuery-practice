@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #my-img{
+            width:100px;
+            height:100px;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        function myFunc(){
+            //attr메서드 (attribute-속성 (속성을 가져오거나, 변경하거나))
+            //$("#my-img").attr('src','./images/cat.jpg');
+            //my-img접근해서 src속성을 './images/cat.jpg'로 변경
+            document.getElementById("my-img").setAttribute('src','./images/cat.jpg');
+        }
+    </script>
+</head>
+<body>
+    <img src="./images/dog.jpg" id="my-img"/>
+    <button onclick="myFunc()">클릭</button>
+</body>
+</html>

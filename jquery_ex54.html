@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #my-img{
+            width:100px;
+            height:100px;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        function myFunc(){
+            //attr메서드 (attribute-속성 (속성을 가져오거나, 변경하거나))
+            var src=$("#my-img").attr('src');
+            //src속성값을 가져와라 - getter
+            //무슨 속성 가져올지 모른다! (0개 불가능)
+            //입력값을 1개줘야 - getter
+            alert(src); // "./images/dog.jpg"
+        }
+    </script>
+</head>
+<body>
+    <img src="./images/dog.jpg" id="my-img"/>
+    <button onclick="myFunc()">클릭</button>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #my-div{
+            width:100px;
+            height:100px;
+            background-color: red;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        function myFunc(){
+            $("#my-div").css('width','+=100');
+            //+= : 복합대입연산자 던져주면
+            //현재 가로길이에서 100늘려서 세팅해준다.
+            //css메서드가 width속성에 접근해서 변경~
+            //css메서드로 하면 px단위 생략해도 잘되네?
+            //원래 순수 JS로 할때는 px단위 안넣으면 변경 안된다!
+        }
+    </script>
+</head>
+<body>
+    <div id="my-div">
+        박스
+    </div>
+    <button onclick="myFunc()">클릭</button>
+</body>
+</html>

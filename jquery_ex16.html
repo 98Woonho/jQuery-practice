@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .my-div{
+            width:100px;
+            height:100px;
+            background-color: red;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //화면 다 만들어질때까지 기다려주고 다 만들어지면 콜백함수 실행
+            $(".my-div").css('backgroundColor','green');
+        })
+        //document객체 접근해서 ready메서드 걸고
+        //ready메서드에 콜백함수 지정(익명함수,즉시실행함수 형태)하면
+        //그 콜백함수는 DOM이 완전하게 로드되고 나서 실행된다.
+//ready(handler) - hanlder(type:function)
+//Specify a function to execute when the DOM is fully loaded.
+//DOM이 완전하게 로드되면 실행할 함수를 지정한다.
+//DOM이 완성되면(DOM Tree가 완성되면) 실행할 함수를 지정한다.
+//HTML이 다 구성되면 실행할 함수를 지정한다.
+    </script>
+</head>
+<body>
+    <div class="my-div">
+        박스
+    </div>
+</body>
+</html>

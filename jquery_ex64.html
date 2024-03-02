@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .my-red{
+            color:red;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        function myFunc(){
+           //$("#my-span").toggleClass("my-red");
+           var result = $("#my-span").hasClass("my-red");
+           if(result===true){//my-red클래스 있다.
+                $("#my-span").removeClass('my-red');
+           }else if(result===false){//my-red클래스 없다.
+                $("#my-span").addClass('my-red');
+           }
+        }
+    </script>
+</head>
+<body>
+    <span id="my-span" class="my-red">스팬</span>
+    <button onclick="myFunc()">클릭</button>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #my-div{
+            width:100px;
+            height:100px;
+            background-color: aqua;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        function myFunc(){
+           var width=$("#my-width").val();
+           var height=$("#my-height").val();
+           var color=$("#my-color").val();
+           $("#my-div").css({'width':width, 'height':height, 'backgroundColor':color})
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="my-width"> <br>
+    <input type="text" id="my-height"> <br>
+    <input type="text" id="my-color"> <br>
+    <button onclick="myFunc()">클릭</button>
+    <div id="my-div">
+        내div
+    </div>
+</body>
+</html>

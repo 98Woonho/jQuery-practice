@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .my-div{
+            width:100px;
+            height:100px;
+            background-color: red;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        //ready랑 똑같은 기능
+        $(function(){
+            //화면 다 만들어질때까지 기다려주고 다 만들어지면 콜백함수 실행
+            $(".my-div").css('backgroundColor','green');
+        })
+    </script>
+</head>
+<body>
+    <div class="my-div">
+        박스
+    </div>
+</body>
+</html>

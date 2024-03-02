@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #my-div{
+            width:100px;
+            height:100px;
+            background-color: aqua;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        //hide, show, toggle
+        $(document).ready(function(){
+            $("#hide-btn").on('click',function(){ 
+                $("#my-div").hide(2000,function(){
+                    //alert('hide완료!');
+                    //hide완료후에 이어서할 애니메이션이나~ 이런걸
+                });
+            })
+            $("#show-btn").on('click',function(){ 
+                $("#my-div").show(2000,function(){
+                    alert('show완료!');
+                });
+            })
+        })
+    </script>
+</head>
+<body>
+    <button id="hide-btn">hide</button>
+    <button id="show-btn">show</button>
+    <div id="my-div">
+        박스
+    </div>
+</body>
+</html>
+

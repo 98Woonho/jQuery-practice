@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        function myFunc(){
+          //document.getElementById('my-input').value='최부장';
+          $("#my-input").val('최부장');
+          //my-input에 접근해서 value를 최부장으로 변경
+          //var myVal=$().val()-getter (리턴값 활용함)
+          //          $().val('최부장')-setter (리턴값 활용안함)
+          //val메서드 입력안주면 getter방식
+          //val메서드 입력주면 setter방식
+
+          //메서드 오버로딩
+          //method overloading
+          //overload : 과적하다.
+          //메서드 과적하는 것 (입력없는 val,입력 1개 있는 val)
+        }
+    </script>
+</head>
+<body>
+    <input type="text" value="김대리" id="my-input"/>
+    <button onclick="myFunc()">클릭</button>
+</body>
+</html>

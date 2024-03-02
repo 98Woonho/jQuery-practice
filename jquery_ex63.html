@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .my-red{
+            color:red;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        function myFunc(){
+           //addClass, removeClass, hasClass, toggleClass
+           $("#my-span").toggleClass("my-red");
+            //toggleClass는 my-red클래스가 있으면 제거하고 (removeClass)
+            //                            없으면 추가하고 (addClass)
+            //검사까지 다해서 추가할지 제거할지 다 해준다.
+        }
+    </script>
+</head>
+<body>
+    <span id="my-span" class="my-red">스팬</span>
+    <button onclick="myFunc()">클릭</button>
+</body>
+</html>

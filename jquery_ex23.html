@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        function myFunc(){
+           $("#li2").prev().css("backgroundColor","red");
+           // prev() : 선택한 요소의 바로 이전의 형제 요소
+        }
+    </script>
+</head>
+<body>
+    <ul><!--부모-->
+        <li>리스트1</li><!--자식-->
+        <li id="li2">리스트2</li>
+        <li>리스트3</li>
+    </ul>
+    <button onclick="myFunc()">클릭</button>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #my-div{
+            width:100px;
+            height:100px;
+            background-color: red;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        function myFunc(){
+            //$("#my-div").css('width','+=100');
+            //$("#my-div").css('height','+=100');
+            $("#my-div").css('width','+=100').css('height','+=100');
+            //체이닝-chaining-메서드 연속실행
+            //체인-chain-사슬
+//
+//체이닝
+//여러개의 제이쿼리 메서드를 한줄에 실행할수있게 허용해준다(같은 요소에)
+//Chaining allows us to run multiple jQuery methods (on the same element) within a single statement.
+        }
+    </script>
+</head>
+<body>
+    <button onclick="myFunc()">클릭</button>
+    <div id="my-div">
+        박스
+    </div>
+</body>
+</html>

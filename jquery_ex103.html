@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #my-div{
+            width:100px;
+            height:100px;
+            background-color: aqua;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        //fadeIn, fadeOut, fadeToggle
+        $(document).ready(function(){
+            $("#fade-to-btn1").on('click',function(){
+                $("#my-div").fadeTo(400,1);
+            })
+            $("#fade-to-btn2").on('click',function(){
+                $("#my-div").fadeTo(400,0.6);
+            })
+            $("#fade-to-btn3").on('click',function(){
+                $("#my-div").fadeTo(400,0.3);
+            })
+        })
+    </script>
+</head>
+<body>
+    <button id="fade-to-btn1">투명도-1.0</button>
+    <button id="fade-to-btn2">투명도-0.6</button>
+    <button id="fade-to-btn3">투명도-0.3</button>
+    <div id="my-div">
+        박스
+    </div>
+</body>
+</html>
+

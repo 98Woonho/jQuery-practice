@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        //$(function(){...})
+        $(document).ready(function(){
+            //my-btn요소에 클릭 이벤트 등록
+            //on메서드는 이벤트 변경, 그룹 이벤트
+            $("#my-btn").on({
+                'click':function(){
+                    $("#my-span").css("backgroundColor","red");
+                },
+                'dblclick':function(){
+                    $("#my-span").css("backgroundColor","green");
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <span id="my-span">스팬</span>
+    <button id="my-btn">버튼</button>
+</body>
+</html>
+

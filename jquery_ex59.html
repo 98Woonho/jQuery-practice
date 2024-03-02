@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #my-img{
+            width:100px;
+            height:100px;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        function myFunc(){
+            var type=document.getElementById("pw").getAttribute("type");
+            //var type=$("#pw").attr("type");
+            if(type==="password"){
+                document.getElementById("pw").setAttribute("type","text");
+                //$("#pw").attr("type","text");
+            }else if(type==="text"){
+                document.getElementById("pw").setAttribute("type","password");
+                //$("#pw").attr("type","password");
+            }
+        }
+        //getAttribute, setAttribute vs attr
+    </script>
+</head>
+<body>
+    <input type="text" id="id"> <br>
+    <input type="password" id="pw"> <br>
+    <button onclick="myFunc()">클릭</button>
+</body>
+</html>

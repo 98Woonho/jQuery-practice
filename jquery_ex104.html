@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #my-div{
+            width:100px;
+            height:100px;
+            background-color: aqua;
+            position:relative;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        //animate , animation, animated
+        $(document).ready(function(){
+            $("#animate-btn").on('click',function(){
+                $("#my-div").animate({"left":"100px"})
+                //최소한 방향이라도 알려줘야 어디로 움직일지 ?
+            })
+        })
+    </script>
+</head>
+<body>
+    <button id="animate-btn">animate</button>
+    <div id="my-div">
+        박스
+    </div>
+</body>
+</html>
+

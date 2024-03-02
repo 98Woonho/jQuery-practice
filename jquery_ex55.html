@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #my-img{
+            width:100px;
+            height:100px;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        var imgList=['./images/dog.jpg','./images/cat.jpg','./images/sudal.jpg'];
+        var i=0;
+        function myFunc(){
+            i++;//1->2->0
+            if(i>=imgList.length){
+                i=0;
+            }
+            $("#my-img").attr('src',imgList[i]);//setter
+        }
+    </script>
+</head>
+<body>
+    <img src="./images/dog.jpg" id="my-img"/>
+    <button onclick="myFunc()">클릭</button>
+</body>
+</html>

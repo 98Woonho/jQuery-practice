@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        width:5000px;
+        height:10000px;
+        background-color: aqua;
+      }
+      #scroll-info{
+          width:200px;
+          height:200px;
+          background-color: aquamarine;
+          position: fixed;
+          left:50px;
+          top:50px;
+      }
+      #scroll-info>span{
+        background-color: chartreuse;
+        margin:10px;
+        display:block;
+      }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+              var sc_top = $(this).scrollTop();//수직 스크롤 높이
+              var sc_left = $(this).scrollLeft();//수평 스크롤
+              $("#sc_top>b").text(sc_top);
+              $("#sc_left>b").text(sc_left);
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="scroll-info">
+        <span id="sc_top">sc_top:<b></b>px</span>
+        <span id="sc_left">sc_left:<b></b>px</span>
+    </div>
+</body>
+</html>
+

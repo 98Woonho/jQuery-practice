@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .my-div{
+            width:100px;
+            height:100px;
+            background-color: red;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        //$(document).ready(function(){...});
+        //$(function(){...});
+        //document.addEventListener('DOMContentLoaded',function(){...});
+
+        //document.getElementById('btn-add').addEventListener('click',function(){...})
+        document.addEventListener('DOMContentLoaded',function(){
+            //DOMContentLoaded이벤트가 발생하면 콜백함수를 실행한다.
+            $(".my-div").css('backgroundColor','green');
+        })
+    </script>
+</head>
+<body>
+    <div class="my-div">
+        박스
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#my-btn").on({
+                'click':function(){
+                    $("#my-btn").next()
+                    .css("backgroundColor","red").text('클릭됨!');
+                },
+                'dblclick':function(){
+                    $("#my-btn").next()
+                    .css("backgroundColor","green").text('더블클릭됨!');
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <span id="my-span">스팬</span>
+    <button id="my-btn">버튼</button>
+		<p id="para">내용</p>
+</body>
+</html>
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .off{
+           background-color: blue;
+        }
+        .on{
+            background-color: red;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        function myFunc(){
+            var result=$("#my-btn").hasClass("on");
+            if(result===true){//클래스 on이 있다.
+                $("#my-btn").removeClass("on").addClass("off")
+                .text('OFF');
+            }else if(result===false){//클래스 on이 없다.(off다)
+                $("#my-btn").removeClass("off").addClass("on")
+                .text('ON');
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="myFunc()" id="my-btn" class="off">OFF</button>
+</body>
+</html>

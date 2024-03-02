@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #my-div{
+            width:100px;
+            height:100px;
+            background-color: aqua;
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        function myFunc(){
+            var html=$("#my-div").html(); //getter
+            //my-div내부에 태그포함해서 글자도 다 나온다.
+            // var html=$("#my-div").text(); //getter
+            // text()는 글자만 나오고 , html()은 태그도 포함되서 나온다.
+            // innerText , innerHTML
+            alert(html);
+        }
+    </script>
+</head>
+<body>
+    <div id="my-div">
+        <b>내div</b>
+    </div>
+    <button onclick="myFunc()">클릭</button>
+</body>
+</html>
